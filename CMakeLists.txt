@@ -50,5 +50,5 @@ message("CMAKE_TOOLCHAIN_FILE: ${CMAKE_TOOLCHAIN_FILE}")
 
 # targets and directories
 add_subdirectory(library4)
-# add_subdirectory(binary3)
+add_subdirectory(binary4)
 
