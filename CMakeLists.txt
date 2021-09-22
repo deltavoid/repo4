@@ -37,7 +37,7 @@ message("CMAKE_TOOLCHAIN_FILE: ${CMAKE_TOOLCHAIN_FILE}")
 find_package(Repo3 REQUIRED)
 
 if (NOT TARGET Repo3::library3)
-  message("not find Repo1::library1")
+  message("not find Repo3::library3")
 endif ()
 
 # find_package(Repo2 REQUIRED)
