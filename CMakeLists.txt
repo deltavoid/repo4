@@ -40,12 +40,7 @@ if (NOT TARGET Repo3::library3)
   message("not find Repo3::library3")
 endif ()
 
-# find_package(Repo2 REQUIRED)
 
-# if (NOT TARGET Repo2::library2)
-#   message("not find Repo2::library2")
-# endif ()
-# include (Repo4FindDeps.cmake)
 
 
 # targets and directories
