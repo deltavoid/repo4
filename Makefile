@@ -14,6 +14,9 @@ REPO3_DIR:=$(WORK_DIR)/repo3
 build: $(BUILD_DIR)/Makefile
 	cd $(BUILD_DIR) && make
 
+install: $(BUILD_DIR)/Makefile
+	cd $(BUILD_DIR) && make install
+
 $(BUILD_DIR)/Makefile: Makefile
 	mkdir -p $(BUILD_DIR) \
 	&& cmake -S . -B $(BUILD_DIR) 
@@ -22,6 +25,11 @@ $(BUILD_DIR)/Makefile: Makefile
 
 clean:	
 	rm -rf $(BUILD_DIR)
+
+uninstall:
+	-rm -rf /usr/local/lib/repo4
+	-rm -rf /usr/local/lib/cmake/repo4
+	-rm -rf /usr/local/include/repo4
 
 
 run: build
