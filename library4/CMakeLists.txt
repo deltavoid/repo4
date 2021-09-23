@@ -28,10 +28,9 @@ target_include_directories(library4
     PUBLIC
         # ../../
         $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/../>
-    
+        $<INSTALL_INTERFACE:include>
 )
 target_link_libraries(library4
     PUBLIC
-        # Repo1::library1
         Repo3::library3
 )
